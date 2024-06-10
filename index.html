@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="Logo vetbahia.PNG" type="image/x-icon">
+    <title>Vetbahia - Produtos Veterinários</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-success text-white text-center py-3">
+        <img src="Logo vetbahia.PNG" alt="Vetbahia Logo" id="logo" class="img-fluid mb-3" style="max-width: 100px;">
+        <h1>Vetbahia - Produtos Veterinários</h1>
+    </header>
+    <main class="container mt-4">
+        <section id="upload-section" class="mb-4">
+            <h2 class="mb-3">Carregar Imagem</h2>
+            <div class="form-group">
+                <input type="file" id="file-input" accept="image/*" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" id="description-input" placeholder="Descrição da imagem" class="form-control">
+            </div>
+            <button id="upload-button" class="btn custom-btn">Upload</button>
+        </section>
+        <section id="search-section" class="mb-4">
+            <h2 class="mb-3">Buscar Imagens</h2>
+            <div class="form-group">
+                <input type="text" id="search-description" placeholder="Buscar por descrição" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="date" id="search-date" class="form-control">
+            </div>
+            <button id="search-button" class="btn custom-btn">Buscar</button>
+        </section>
+        <section id="gallery" class="row"></section>
+    </main>
+    <footer class="bg-success text-white text-center py-3">
+        <p>&copy; 2024 Vetbahia - Todos os direitos reservados</p>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="modal-caption"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
